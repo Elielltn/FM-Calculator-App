@@ -79,6 +79,7 @@ btnNine.addEventListener("click", function () {
 });
 
 btnDel.addEventListener("click", function () {
+  
   screen.innerHTML = "";
 });
 
@@ -299,27 +300,23 @@ btnEqual.addEventListener("click", function () {
     firstNum = [];
     secondNum = [];
     operation = [];
-    firstNum.push(screen.innerHTML);
   } else if (operation[0] === "-") {
     screen.innerHTML =
       parseFloat(firstNum.join()) - parseFloat(secondNum.join());
     firstNum = [];
     secondNum = [];
     operation = [];
-    firstNum.push(screen.innerHTML);
   } else if (operation[0] === "*") {
     screen.innerHTML =
       parseFloat(firstNum.join()) * parseFloat(secondNum.join());
     firstNum = [];
     secondNum = [];
     operation = [];
-    firstNum.push(screen.innerHTML);
   } else if (operation[0] === "/") {
     screen.innerHTML =
       parseFloat(firstNum.join()) / parseFloat(secondNum.join());
     firstNum = [];
     secondNum = [];
     operation = [];
-    firstNum.push(screen.innerHTML);
   }
 });
