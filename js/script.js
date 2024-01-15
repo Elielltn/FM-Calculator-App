@@ -146,6 +146,7 @@ btnPlus.addEventListener("click", function () {
     btnMult.classList.remove("operation-pressed");
     btnDiv.classList.remove("operation-pressed");
     btnPlus.classList.add("operation-pressed");
+    operation = [];
     operation.push("+");
   } else {
     btnPlus.classList.add("operation-pressed");
@@ -217,6 +218,7 @@ btnMinus.addEventListener("click", function () {
     btnMult.classList.remove("operation-pressed");
     btnDiv.classList.remove("operation-pressed");
     btnMinus.classList.add("operation-pressed");
+    operation = [];
     operation.push("-");
   } else {
     btnMinus.classList.add("operation-pressed");
@@ -256,6 +258,7 @@ btnDiv.addEventListener("click", function () {
     btnMult.classList.remove("operation-pressed");
     btnMinus.classList.remove("operation-pressed");
     btnDiv.classList.add("operation-pressed");
+    operation = [];
     operation.push("/");
   } else {
     btnDiv.classList.add("operation-pressed");
@@ -273,6 +276,7 @@ btnMult.addEventListener("click", function () {
     btnDiv.classList.remove("operation-pressed");
     btnMinus.classList.remove("operation-pressed");
     btnMult.classList.add("operation-pressed");
+    operation = [];
     operation.push("*");
   } else {
     btnMult.classList.add("operation-pressed");
