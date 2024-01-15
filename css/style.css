@@ -1,0 +1,134 @@
+:root {
+  --color-main-background: hsl(222, 26%, 31%);
+  --color-toogle-keypad-background: hsl(223, 31%, 20%);
+  --color-screen-background: hsl(224, 36%, 15%);
+  --color-key-background-blue: #637097;
+  --color-key-shadow-blue: hsl(224, 28%, 35%);
+  --color-key-background-red: #d03f2f;
+  --color-key-shadow-red: hsl(6, 70%, 34%);
+  --color-key-background-white: hsl(30, 25%, 89%);
+  --color-key-shadow-white: hsl(28, 16%, 65%);
+  --color-very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-main-background);
+}
+
+.main {
+  height: 55rem;
+  width: 40rem;
+}
+
+.logo{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.header{
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.screen{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: var(--color-screen-background);
+  height: 10rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  color: var(--color-white);
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.keys{
+  background-color: var(--color-toogle-keypad-background);
+  height: 30rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.key{
+  border-radius: .75rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+}
+
+.key:hover{
+  cursor: pointer;
+}
+
+.number{
+  background-color: var(--color-key-background-white);
+  box-shadow: 0 .3rem 0 0 var(--color-key-shadow-white);
+}
+
+.number:hover{
+  background-color: var(--color-white);
+}
+
+.operation-pressed{
+  background-color: var(--color-key-shadow-white);
+}
+
+.action{
+  background-color: var(--color-key-background-blue);
+  box-shadow: 0 .3rem 0 0 var(--color-key-shadow-blue);
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.action:hover{
+  background-color: #828dac;
+}
+
+.reset{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.equal{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: var(--color-key-background-red);
+  box-shadow: 0 .3rem 0 0 var(--color-key-shadow-red);
+  color: var(--color-white);
+}
+
+.equal:hover{
+  background-color: #d96559;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
